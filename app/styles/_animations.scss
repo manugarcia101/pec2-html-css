@@ -1,0 +1,68 @@
+.container {
+  position: relative;
+  text-align: center;
+  color: $whitecolor;
+}
+  
+.centered {
+  color: $orangecolor;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
+.glow-on-hover {
+  min-width: 40%;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: $whitecolor;
+  background: $orangecolor;
+  cursor: pointer;
+  position: relative;
+  z-index: $index0;
+  border-radius: 10px;
+  font-weight: $font-bold;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+  
+.glow-on-hover::before {
+  content: '';
+  background: linear-gradient(45deg, $red, $orange, $yellow, $green, $light-blue, $dark-blue, $purple, $pink, $red);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: $indexneg1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+  
+.glow-on-hover:hover::before {
+  opacity: 1;
+}
+  
+.glow-on-hover::after {
+  z-index: $indexneg1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $orangecolor;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+  
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}

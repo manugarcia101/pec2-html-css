@@ -1,0 +1,37 @@
+{
+  "name": "Practica1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/js/index.js",
+  "scripts": {
+    "stylelint": "stylelint app/**/*.scss",
+    "test": "jest --passWithNoTests --silent",
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean stylelint parcel:build",
+    "parcel:dev": "parcel app/index.html",
+    "parcel:build": "parcel build app/index.html",
+    "clean": "rimraf dist .cache .cache-loader"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "autoprefixer": "^9.7.5",
+    "babel-jest": "^25.2.1",
+    "jest": "^25.2.1",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-imagemin": "^4.0.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.3",
+    "stylelint": "^13.2.1",
+    "stylelint-config-strict-scss": "^0.5.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "stylelint-color-format": "^1.1.0",
+    "stylelint-scss": "^3.16.0"
+  }
+}

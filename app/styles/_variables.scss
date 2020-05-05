@@ -1,0 +1,43 @@
+@use 'sass:color';
+
+$greycolor: rgb(95, 95, 95);
+$whitecolor: rgb(255, 255, 255);
+$orangecolor: rgb(247, 111, 0);
+$blackcolor: rgb(0, 0, 0);
+$blackcolor-light: rgba(0, 0, 0, 0.8);
+
+// Animation colors
+$red: rgb(255, 0, 0);
+$orange: rgb(247, 111, 0);
+$yellow: rgb(255, 230, 0);
+$green: rgb(94, 255, 0);
+$light-blue: rgb(0, 255, 200);
+$dark-blue: rgb(0, 60, 255);
+$purple: rgb(132, 0, 255);
+$pink: rgb(255, 0, 212);
+
+$navpadding: 15px 30px;
+
+$font-family-sans: sans;
+$font-family-serif: serif;
+
+$font-size-xsmall: 12px;
+$font-size-small: 16px;
+$font-size-regular: 18px;
+$font-size-big: 25px;
+
+$font-bold: 900;
+
+$phone-size: 500px;
+$large-phone-size: 600px;
+$small-tablet-size: 700px;
+$tablet-size-viewport: 800px;
+$large-tablet-size: 900px;
+$intermeditate-size-viewport: 1000px;
+$small-laptop-size: 1100px;
+$laptop-size-viewport: 1200px;
+
+$indexneg1: -1;
+$index0: 0;
+$index1: 1;
+$z-index: 1000;
