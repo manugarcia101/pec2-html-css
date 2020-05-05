@@ -125,5 +125,5 @@ window.addEventListener('mouseout', function(){
     mouse.y = undefined;
 });
 
-// init();
-// animate();
+init();
+animate();
