@@ -66,22 +66,14 @@
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <picture class="pic">
-                        <picture media="(max-width: 600px)">
-                            <source srcset="./images/css-images/css1mov.webp" type="image/webp">
-                            <source srcset="./images/css-images/css1mov.jpg" type="image/jpeg">
-                        </picture>
-                        <picture media="(max-width: 900px)">
-                            <source srcset="./images/css-images/css1-900.webp" type="image/webp">
-                            <source srcset="./images/css-images/css1-900.jpg" type="image/jpeg">
-                        </picture>
-                        <picture media="(min-width: 901px)">
-                            <source srcset="./images/css-images/css1.webp" type="image/webp">
-                            <source srcset="./images/css-images/css1.jpg" type="image/jpeg">
-                        </picture>
-                        <img src="./images/css-images/css1.webp" alt="carrusel codigo css 1" type="image/webp">
-                        <img src="./images/css-images/css1.jpg" alt="carrusel codigo css 1" type="image/jpeg">
+                        <source media="(max-width: 600px)" srcset="./images/css-images/css1mov.jpg" type="image/jpeg">
+                        <source media="(max-width: 600px)" srcset="./images/css-images/css1mov.webp" type="image/webp">
+                        <source media="(max-width: 900px)" srcset="./images/css-images/css1-900.jpg" type="image/jpeg">
+                        <source media="(max-width: 900px)" srcset="./images/css-images/css1-900.webp" type="image/webp">
+                        <source media="(min-width: 901px)" srcset="./images/css-images/css1.jpg" type="image/jpeg">
+                        <source media="(min-width: 901px)" srcset="./images/css-images/css1.webp" type="image/webp">
+                        <img src="./images/css-images/css1.jpg" alt="">
                     </picture>
-                    <div class="text">Caption Text</div>
                 </div>
                     
                 <div class="mySlides fade">
@@ -90,7 +82,6 @@
                         <source media="(min-width: 601px)" srcset="./images/css-images/css2.jpg">
                         <img src="./images/css-images/css2.jpg" alt="carrusel codigo css 2">
                     </picture>
-                    <div class="text">Caption Two</div>
                 </div>
                     
                 <div class="mySlides fade">
@@ -100,19 +91,11 @@
                         <source media="(min-width: 901px)" srcset="./images/css-images/css3.jpg">
                         <img src="./images/css-images/css3.jpg" alt="carrusel codigo css 3">
                     </picture>
-                    <div class="text">Caption Three</div>
                 </div>
                 
                 <a class="prev" onclick="plusSlides(-1)" id="prev">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)" id="next">&#10095;</a>
             </div>
-            <br>
-            
-            <!-- <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-            </div> -->
         </div>
         
         <footer class="container">
